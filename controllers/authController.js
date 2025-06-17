@@ -5,8 +5,8 @@ const jwt = require("jsonwebtoken");
 
 const cookieOptions = {
   httpOnly: true,
-  secure:false,
-  sameSite: 'lax',
+  secure:true,
+  sameSite: "None",
   maxAge: 3 * 24 * 60 * 60 * 1000, // 3 days in milliseconds
   path: '/'
 };
